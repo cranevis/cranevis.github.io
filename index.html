@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cranevis - Ultimate Mobile Crane & Lifting Companion App</title>
+    <title>Cranevis - Aplikasi Pintar Operasi Lifting & Crane</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -13,10 +13,10 @@
         }
         .bg-grid-pattern {
             background-size: 40px 40px;
-            background-image: linear-gradient(to right, rgba(59, 130, 246, 0.03) 1px, transparent 1px),
-                              linear-gradient(to bottom, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
+            background-image: linear-gradient(to right, rgba(15, 23, 42, 0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(15, 23, 42, 0.03) 1px, transparent 1px);
         }
-        /* Custom smooth transition for the privacy policy accordion */
+        /* Animasi mulus untuk accordion */
         details[open] summary ~ * {
             animation: slideDown 0.3s ease-in-out;
         }
@@ -26,316 +26,205 @@
         }
     </style>
 </head>
-<body class="bg-slate-950 text-slate-100 bg-grid-pattern overflow-x-hidden">
+<body class="bg-slate-50 text-slate-800 bg-grid-pattern overflow-x-hidden pt-20">
 
-    <header class="fixed top-0 left-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/60">
+    <header class="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <div class="flex items-center space-x-3">
-                <div class="bg-blue-600 text-white p-2 rounded-xl font-black text-xl flex items-center justify-center shadow-lg shadow-blue-500/20">
+                <div class="bg-blue-600 text-white p-2 rounded-xl font-black text-xl flex items-center justify-center shadow-md">
                     <i data-lucide="hook" class="w-6 h-6 transform -rotate-45"></i>
                 </div>
-                <span class="text-2xl font-extrabold tracking-wider bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">
-                    CRANE<span class="text-blue-500">VIS</span>
+                <span class="text-2xl font-extrabold tracking-wider text-slate-900">
+                    CRANE<span class="text-blue-600">VIS</span>
                 </span>
             </div>
-            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-400">
-                <a href="#features" class="hover:text-blue-400 transition-colors">Capabilities</a>
-                <a href="#why-us" class="hover:text-blue-400 transition-colors">Advantages</a>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold text-slate-600">
+                <a href="#fitur" class="hover:text-blue-600 transition-colors">Fitur Utama</a>
+                <a href="#keunggulan" class="hover:text-blue-600 transition-colors">Keunggulan</a>
             </nav>
             <div>
-                <a href="#download" class="bg-blue-600 hover:bg-blue-500 text-white font-bold px-6 py-2.5 rounded-xl transition-all hover:scale-105 shadow-lg shadow-blue-600/20 flex items-center space-x-2 text-sm">
+                <a href="#download" class="bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-2.5 rounded-xl transition-all shadow-md shadow-blue-600/20 flex items-center space-x-2 text-sm">
                     <i data-lucide="download" class="w-4 h-4"></i>
-                    <span>Get App</span>
+                    <span>Unduh Aplikasi</span>
                 </a>
             </div>
         </div>
     </header>
 
-    <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-28 pb-4">
-        <details class="group bg-slate-900/80 border border-slate-800 rounded-2xl p-2 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden shadow-lg">
-            <summary class="flex items-center justify-between cursor-pointer p-4 rounded-xl hover:bg-slate-800/80 select-none transition-colors">
-                <div class="flex items-center gap-3">
-                    <div class="bg-blue-500/10 p-2 rounded-lg">
-                        <i data-lucide="shield-check" class="w-5 h-5 text-blue-400"></i>
-                    </div>
-                    <span class="text-sm font-semibold tracking-wide text-slate-300 group-hover:text-blue-400">
-                        View Application Privacy Policy & Data Security
-                    </span>
-                </div>
-                <span class="transition duration-300 group-open:-rotate-180 text-slate-500 bg-slate-950 p-1.5 rounded-full">
-                    <i data-lucide="chevron-down" class="w-4 h-4"></i>
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+        <details class="group bg-white border border-slate-200 rounded-2xl shadow-sm transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex items-center justify-between cursor-pointer p-4 rounded-xl hover:bg-slate-50 select-none transition-colors">
+                <span class="text-sm font-bold tracking-wide text-slate-700 group-hover:text-blue-600 flex items-center gap-2">
+                    <i data-lucide="shield-check" class="w-5 h-5 text-blue-600"></i>
+                    Kebijakan Privasi (Privacy Policy)
+                </span>
+                <span class="transition duration-300 group-open:-rotate-180 text-slate-400">
+                    <i data-lucide="chevron-down" class="w-5 h-5"></i>
                 </span>
             </summary>
             
-            <div class="px-6 pb-8 pt-4 border-t border-slate-800/60 mt-2 space-y-6 text-slate-300 font-light text-sm leading-relaxed">
-                <div class="flex justify-between items-center border-b border-slate-800 pb-4 mb-4">
-                    <h2 class="text-xl font-bold text-white tracking-tight">Strict Privacy & Zero Data Collection</h2>
-                    <p class="text-xs text-blue-400 font-mono bg-blue-500/10 px-3 py-1 rounded-full">Updated: May 2026</p>
-                </div>
-                <p class="text-base text-slate-400">Cranevis is built for field professionals. We believe your engineering data belongs strictly to you. Our architecture guarantees absolute privacy.</p>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
-                    <div class="space-y-2">
-                        <h3 class="text-sm font-bold text-white uppercase tracking-wider flex items-center gap-2">
-                            <i data-lucide="database-zap" class="w-4 h-4 text-blue-500"></i> 1. 100% Local Processing
-                        </h3>
-                        <p class="text-slate-400 text-xs leading-relaxed">We do not collect, store, or transmit any personal or project information. All lift simulations, geometries, and math calculations are processed entirely offline on your device processor.</p>
-                    </div>
-                    <div class="space-y-2">
-                        <h3 class="text-sm font-bold text-white uppercase tracking-wider flex items-center gap-2">
-                            <i data-lucide="wifi-off" class="w-4 h-4 text-blue-500"></i> 2. No Third-Party Trackers
-                        </h3>
-                        <p class="text-slate-400 text-xs leading-relaxed">This app operates without connecting to analytics tools, advertising networks, or external cloud servers. Your project configurations cannot be intercepted or leaked.</p>
-                    </div>
-                    <div class="space-y-2">
-                        <h3 class="text-sm font-bold text-white uppercase tracking-wider flex items-center gap-2">
-                            <i data-lucide="folder-lock" class="w-4 h-4 text-blue-500"></i> 3. Device Permissions
-                        </h3>
-                        <p class="text-slate-400 text-xs leading-relaxed">We only request permissions strictly necessary for local functions, such as local storage to generate and save your PDF Lifting Plans directly to your phone's memory.</p>
-                    </div>
-                    <div class="space-y-2">
-                        <h3 class="text-sm font-bold text-white uppercase tracking-wider flex items-center gap-2">
-                            <i data-lucide="mail" class="w-4 h-4 text-blue-500"></i> 4. Contact Developer
-                        </h3>
-                        <p class="text-slate-400 text-xs leading-relaxed">For business inquiries or technical support, please contact us directly through the official developer email listed on the Google Play Store. We are committed to transparency.</p>
-                    </div>
-                </div>
+            <div class="px-5 pb-6 pt-2 border-t border-slate-100 mt-2 space-y-4 text-slate-600 font-medium text-sm leading-relaxed max-h-[300px] overflow-y-auto">
+                <p>Kami sangat menghargai privasi Anda. Aplikasi ini dirancang dengan standar keamanan tertinggi dimana <strong>seluruh pemrosesan data dilakukan secara lokal di perangkat Anda</strong>.</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li><strong>Tanpa Pengumpulan Data:</strong> Kami tidak mengumpulkan, menyimpan, atau membagikan data pribadi Anda ke server pihak ketiga.</li>
+                    <li><strong>Izin Perangkat Minimal:</strong> Izin yang diminta murni hanya untuk fungsi internal aplikasi seperti menyimpan riwayat kalkulasi (storage lokal).</li>
+                    <li><strong>Bebas Pelacak (No Trackers):</strong> Kami tidak menyematkan analitik eksternal yang melacak aktivitas Anda.</li>
+                </ul>
+                <p class="text-xs text-slate-400 pt-2 border-t border-slate-100">Pembaruan terakhir: Mei 2026. Jika ada pertanyaan, hubungi tim dukungan kami melalui kontak di Google Play Store.</p>
             </div>
         </details>
     </section>
 
-    <section class="pt-16 pb-24 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto flex flex-col items-center text-center space-y-10">
-        <div class="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-500/30 text-blue-400 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider shadow-lg shadow-blue-500/5">
-            <i data-lucide="check-circle-2" class="w-4 h-4"></i>
-            <span>The Professional Standard for Heavy Lifting</span>
+    <section class="pt-16 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col items-center justify-center text-center gap-8 min-h-[70vh]">
+        <div class="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200 text-blue-700 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+            <span class="flex h-2 w-2 relative">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
+            </span>
+            <span>Aplikasi Lifting #1 untuk Profesional</span>
         </div>
-        
-        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-tight text-white">
-            Transform Your Smartphone into a <br class="hidden lg:block">
-            <span class="bg-gradient-to-r from-blue-400 via-sky-400 to-cyan-300 bg-clip-text text-transparent">Lifting Command Center.</span>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight text-slate-900 max-w-4xl">
+            Kerja Lebih Cepat, <br>
+            <span class="text-blue-600">Lifting Lebih Aman.</span>
         </h1>
-        
-        <p class="text-lg sm:text-xl text-slate-400 max-w-3xl font-light leading-relaxed">
-            Eliminate math guesswork, prevent critical errors, and draft compliance-ready lifting plans in seconds. Cranevis is the definitive mobile toolkit built specifically for crane operators, riggers, and safety engineers.
+        <p class="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed">
+            Gantikan buku manual tebal dan tebakan berisiko. Hitung kapasitas sling, tekanan tanah (GBP), dan hasilkan <i>Lifting Plan</i> profesional langsung dari smartphone Anda dalam hitungan detik.
         </p>
-        
-        <div class="flex flex-wrap justify-center gap-5 pt-4">
-            <a href="#download" class="flex items-center space-x-3 bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-2xl transition-all duration-300 shadow-xl shadow-blue-600/20 hover:-translate-y-1">
+        <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4 w-full sm:w-auto">
+            <a href="#download" class="flex justify-center items-center space-x-3 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-2xl transition-all duration-200 shadow-lg shadow-blue-600/30 font-bold text-lg w-full sm:w-auto">
                 <i data-lucide="smartphone" class="w-6 h-6"></i>
-                <span class="text-lg font-bold">Download Cranevis Now</span>
-            </a>
-            <a href="#features" class="flex items-center space-x-2 text-slate-300 hover:text-white bg-slate-900 border border-slate-700 hover:border-slate-500 px-8 py-4 rounded-2xl transition-all duration-300">
-                <span class="font-semibold">Explore Capabilities</span>
-                <i data-lucide="arrow-down" class="w-5 h-5"></i>
+                <span>Mulai Gunakan Sekarang</span>
             </a>
         </div>
-        
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 pt-12 w-full max-w-4xl border-t border-slate-800/80">
-            <div>
-                <p class="text-4xl font-black text-white">7</p>
-                <p class="text-xs text-blue-400 uppercase mt-2 font-semibold tracking-wider">Engineering Modules</p>
-            </div>
-            <div>
-                <p class="text-4xl font-black text-white">100%</p>
-                <p class="text-xs text-blue-400 uppercase mt-2 font-semibold tracking-wider">Offline Capability</p>
-            </div>
-            <div>
-                <p class="text-4xl font-black text-white">0%</p>
-                <p class="text-xs text-blue-400 uppercase mt-2 font-semibold tracking-wider">Margin of Error</p>
-            </div>
-            <div>
-                <p class="text-4xl font-black text-white">PDF</p>
-                <p class="text-xs text-blue-400 uppercase mt-2 font-semibold tracking-wider">Instant Export</p>
-            </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 pt-10 border-t border-slate-200 w-full max-w-4xl mt-6">
+            <div><p class="text-3xl font-extrabold text-slate-900">100%</p><p class="text-xs text-slate-500 uppercase mt-1 font-bold">Akurasi Matematis</p></div>
+            <div><p class="text-3xl font-extrabold text-slate-900">7+</p><p class="text-xs text-slate-500 uppercase mt-1 font-bold">Modul Kalkulasi</p></div>
+            <div><p class="text-3xl font-extrabold text-slate-900">PDF</p><p class="text-xs text-slate-500 uppercase mt-1 font-bold">Ekspor Laporan</p></div>
+            <div><p class="text-3xl font-extrabold text-slate-900">Offline</p><p class="text-xs text-slate-500 uppercase mt-1 font-bold">Berjalan Tanpa Internet</p></div>
         </div>
     </section>
 
-    <section id="features" class="py-24 bg-slate-900/30 border-y border-slate-800/50">
+    <section id="fitur" class="py-24 bg-white border-y border-slate-200 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-20 space-y-4">
-                <h2 class="text-sm font-bold uppercase tracking-widest text-blue-500">Comprehensive Utility Suite</h2>
-                <p class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Everything You Need to Lift with Absolute Confidence</p>
-                <p class="text-slate-400 font-light text-lg">We replaced bulky manuals and complex spreadsheets with an intuitive interface. Access seven robust engineering modules right in the field.</p>
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-sm font-bold uppercase tracking-widest text-blue-600">Kemudahan dalam Genggaman</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Semua Alat yang Anda Butuhkan di Lapangan</p>
+                <p class="text-slate-600 font-medium">Dirancang khusus untuk rigger, operator crane, dan safety officer untuk memastikan setiap proses pengangkatan memenuhi standar keselamatan.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-slate-950 border border-slate-800 p-8 rounded-3xl hover:border-blue-500/50 hover:bg-slate-900 transition-all duration-300 group hover:-translate-y-1">
-                    <div class="bg-blue-600/10 text-blue-400 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                        <i data-lucide="hard-drive" class="w-7 h-7"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3">1. Centralized Configuration Hub</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        Say goodbye to scattered notes. Safely record, edit, and instantly recall specific crane capacities, structural measurements, and load matrices for repeated operations.
-                    </p>
-                </div>
-
-                <div class="bg-slate-950 border border-slate-800 p-8 rounded-3xl hover:border-blue-500/50 hover:bg-slate-900 transition-all duration-300 group hover:-translate-y-1">
-                    <div class="bg-blue-600/10 text-blue-400 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                        <i data-lucide="book-open" class="w-7 h-7"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3">2. Dynamic Rating Encyclopedia</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        Instant access to a massive database of wire rope slings, synthetic webbing, and chain configurations. Seamlessly toggle between Imperial and Metric standards.
-                    </p>
-                </div>
-
-                <div class="bg-slate-950 border border-slate-800 p-8 rounded-3xl hover:border-blue-500/50 hover:bg-slate-900 transition-all duration-300 group hover:-translate-y-1">
-                    <div class="bg-blue-600/10 text-blue-400 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                        <i data-lucide="scan-line" class="w-7 h-7"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3">3. Augmented Angle Camera</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        Utilize your device's camera to verify rigging geometry visually. Overlay smart protractors on your load to ensure your sling angles stay within safe hoisting tolerances.
-                    </p>
-                </div>
-
-                <div class="bg-slate-950 border border-slate-800 p-8 rounded-3xl hover:border-blue-500/50 hover:bg-slate-900 transition-all duration-300 group hover:-translate-y-1">
-                    <div class="bg-blue-600/10 text-blue-400 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-slate-50 border border-slate-200 p-8 rounded-3xl hover:shadow-lg transition-all duration-300 group">
+                    <div class="bg-blue-100 text-blue-600 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i data-lucide="activity" class="w-7 h-7"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">4. Automated Stress Analysis</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        Input your payload weight and sling geometry to instantly compute individual leg tension. Automatically verify if your rigging setup meets the required safety factor.
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Kalkulator Tegangan Sling</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Input berat beban dan sudut sling untuk menghitung tekanan pada setiap kaki (leg). Hindari kelebihan muatan pada rigging Anda secara presisi.
                     </p>
                 </div>
 
-                <div class="bg-slate-950 border border-slate-800 p-8 rounded-3xl hover:border-blue-500/50 hover:bg-slate-900 transition-all duration-300 group hover:-translate-y-1">
-                    <div class="bg-blue-600/10 text-blue-400 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                        <i data-lucide="box" class="w-7 h-7"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3">5. Advanced Lift Simulation</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        Digitally recreate the site environment. Configure boom length up to 200m, adjust building clearance obstacles, and test your hook positioning safely before the actual lift.
-                    </p>
-                </div>
-
-                <div class="bg-slate-950 border border-slate-800 p-8 rounded-3xl hover:border-blue-500/50 hover:bg-slate-900 transition-all duration-300 group hover:-translate-y-1">
-                    <div class="bg-blue-600/10 text-blue-400 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                <div class="bg-slate-50 border border-slate-200 p-8 rounded-3xl hover:shadow-lg transition-all duration-300 group">
+                    <div class="bg-blue-100 text-blue-600 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i data-lucide="layers" class="w-7 h-7"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">6. Ground Bearing Safety</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        Prevent catastrophic ground failure. Calculate outrigger forces and input Soil Bearing Capacity (SBC) to automatically determine the exact support pad dimensions required.
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Analisis Tekanan Tanah (GBP)</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Hitung gaya maksimal pada outrigger dan temukan ukuran pelat alas (pad) minimum yang diizinkan untuk mencegah crane amblas.
                     </p>
                 </div>
 
-                <div class="bg-gradient-to-br from-blue-900/40 to-slate-900 border border-blue-800/50 p-8 rounded-3xl hover:border-blue-400 transition-all duration-300 lg:col-span-3 group flex flex-col md:flex-row items-start md:items-center justify-between gap-8 shadow-2xl shadow-blue-900/20">
-                    <div class="flex-1 space-y-4">
-                        <div class="flex items-center space-x-4">
-                            <div class="bg-blue-500 text-white w-14 h-14 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-500/30">
-                                <i data-lucide="file-check-2" class="w-7 h-7"></i>
-                            </div>
-                            <h3 class="text-2xl font-bold text-white">7. Instant PDF Lifting Plans</h3>
-                        </div>
-                        <p class="text-slate-300 text-base leading-relaxed max-w-4xl">
-                            Turn your calculations into professional documentation instantly. Compile simulation telemetry, sling limits, and soil pressure data into a neat, print-ready PDF Lifting Plan. Speed up approval times with your site managers and safety officers.
-                        </p>
+                <div class="bg-slate-50 border border-slate-200 p-8 rounded-3xl hover:shadow-lg transition-all duration-300 group">
+                    <div class="bg-blue-100 text-blue-600 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="file-spreadsheet" class="w-7 h-7"></i>
                     </div>
-                    <div class="shrink-0">
-                        <button class="bg-white text-blue-900 font-bold px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors flex items-center gap-2">
-                            <i data-lucide="printer" class="w-5 h-5"></i>
-                            Generate Report
-                        </button>
-                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Generator Lifting Plan PDF</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Kompilasi semua perhitungan teknis Anda menjadi sebuah dokumen PDF profesional. Siap dicetak, dibagikan, dan diajukan untuk persetujuan (approval) proyek.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="why-us" class="py-24 relative overflow-hidden bg-slate-950">
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-blue-600/10 rounded-full filter blur-[100px] pointer-events-none"></div>
-        
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section id="keunggulan" class="py-24 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                <span class="text-sm font-bold uppercase tracking-widest text-blue-500">Uncompromised Precision</span>
-                <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight">Built to Protect Your Team and Your Equipment</h2>
+                <span class="text-sm font-bold uppercase tracking-widest text-blue-400">Keamanan & Efisiensi</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Investasi Terbaik untuk Keselamatan Proyek</h2>
             </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-slate-900/50 backdrop-blur-sm border border-slate-800 p-10 rounded-[2rem] space-y-5 text-center">
-                    <div class="mx-auto w-16 h-16 bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center rounded-2xl">
-                        <i data-lucide="shield-alert" class="w-8 h-8"></i>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-slate-800 p-8 rounded-3xl">
+                    <div class="mx-auto w-14 h-14 bg-blue-500/20 text-blue-400 flex items-center justify-center rounded-2xl mb-4">
+                        <i data-lucide="shield-alert" class="w-7 h-7"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white">Zero Margin for Error</h3>
+                    <h3 class="text-lg font-bold mb-2">Mitigasi Risiko Instan</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">
-                        A single miscalculation can be disastrous. Cranevis uses industry-standard algorithms (ASME B30) to cross-verify every mechanical limitation before the hook even moves.
+                        Validasi spesifikasi mekanik, kawat, dan tanah sebelum operasi dilakukan. Cegah kecelakaan kerja akibat salah perhitungan manual.
                     </p>
                 </div>
-                
-                <div class="bg-slate-900/50 backdrop-blur-sm border border-slate-800 p-10 rounded-[2rem] space-y-5 text-center">
-                    <div class="mx-auto w-16 h-16 bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center rounded-2xl">
-                        <i data-lucide="zap" class="w-8 h-8"></i>
+                <div class="bg-slate-800 p-8 rounded-3xl">
+                    <div class="mx-auto w-14 h-14 bg-blue-500/20 text-blue-400 flex items-center justify-center rounded-2xl mb-4">
+                        <i data-lucide="pocket" class="w-7 h-7"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white">Accelerate Workflows</h3>
+                    <h3 class="text-lg font-bold mb-2">Bekerja Offline Sepenuhnya</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">
-                        Stop wasting time flipping through heavy binder charts. Get instant mathematical validation on your device, allowing you to execute setups faster and keep operations on schedule.
+                        Lokasi proyek seringkali tidak memiliki sinyal? Tidak masalah. Seluruh database dan sistem kalkulasi berjalan mandiri tanpa butuh akses internet.
                     </p>
                 </div>
-                
-                <div class="bg-slate-900/50 backdrop-blur-sm border border-slate-800 p-10 rounded-[2rem] space-y-5 text-center">
-                    <div class="mx-auto w-16 h-16 bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center rounded-2xl">
-                        <i data-lucide="award" class="w-8 h-8"></i>
+                <div class="bg-slate-800 p-8 rounded-3xl">
+                    <div class="mx-auto w-14 h-14 bg-blue-500/20 text-blue-400 flex items-center justify-center rounded-2xl mb-4">
+                        <i data-lucide="check-circle" class="w-7 h-7"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white">Instant Compliance</h3>
+                    <h3 class="text-lg font-bold mb-2">Sesuai Standar Industri</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">
-                        Regulatory bodies demand strict documentation. With our integrated PDF builder, you can hand over comprehensive, professional lifting plans to auditors and supervisors in seconds.
+                        Algoritma di balik Cranevis mengadopsi standar regulasi alat berat modern, menjadikannya alat validasi yang dipercaya oleh para engineer.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="download" class="py-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="relative bg-gradient-to-br from-blue-700 to-indigo-900 rounded-[3rem] overflow-hidden shadow-2xl p-10 sm:p-16 text-center border border-blue-500/30">
-            <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
-            
-            <div class="max-w-2xl mx-auto space-y-8 relative z-10">
-                <h2 class="text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
-                    Upgrade Your Lifting Operations Today.
+    <section id="download" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-blue-600 text-white rounded-[40px] overflow-hidden shadow-2xl p-8 sm:p-12 lg:p-16 text-center border border-blue-500">
+            <div class="max-w-3xl mx-auto space-y-8">
+                <h2 class="text-3xl sm:text-5xl font-black tracking-tight">
+                    Bergabung dengan Ratusan Profesional Lifting Lainnya
                 </h2>
-                <p class="text-blue-100 font-medium text-lg leading-relaxed">
-                    Join hundreds of certified riggers and civil safety engineers who have optimized their safety standards with Cranevis. Available exclusively for Android.
+                <p class="text-blue-100 font-medium text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
+                    Tingkatkan standar operasional dan keselamatan kerja Anda hari ini. Unduh Cranevis sekarang dan pastikan setiap angka sudah presisi sebelum hook diangkat.
                 </p>
-                
-                <div class="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4">
-                    <button class="w-full sm:w-auto bg-white hover:bg-slate-50 text-blue-900 font-bold px-8 py-4 rounded-2xl shadow-xl transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-3">
-                        <i data-lucide="play" class="w-6 h-6 fill-blue-600 text-blue-600"></i>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <button class="bg-white hover:bg-slate-50 text-slate-900 font-bold px-8 py-4 rounded-2xl shadow-xl transition-all duration-200 hover:-translate-y-1 flex items-center justify-center space-x-3">
+                        <i data-lucide="play" class="w-6 h-6 fill-slate-900 text-slate-900"></i>
                         <div class="text-left">
-                            <p class="text-[10px] text-slate-500 uppercase tracking-wider font-bold">Download on the</p>
-                            <p class="text-lg font-black leading-none mt-0.5">Google Play</p>
+                            <p class="text-[10px] text-slate-500 uppercase tracking-wider font-bold">Unduh Sekarang di</p>
+                            <p class="text-base font-extrabold">Google Play Store</p>
                         </div>
                     </button>
-                    
-                    <button class="w-full sm:w-auto bg-transparent border-2 border-blue-300 text-white hover:bg-blue-600/50 font-bold px-8 py-4 rounded-2xl transition-all duration-300 flex items-center justify-center space-x-2 h-full">
-                        <i data-lucide="download" class="w-5 h-5"></i>
-                        <span class="text-lg">Direct APK</span>
-                    </button>
                 </div>
-                
-                <div class="flex items-center justify-center gap-2 text-blue-200 text-sm pt-4">
-                    <i data-lucide="check" class="w-4 h-4"></i>
-                    <span>Requires Android 8.0 or higher. No constant internet required.</span>
-                </div>
+                <p class="text-xs text-blue-200 font-medium pt-4">
+                    Kompatibel untuk perangkat Android. Pembaruan gratis secara berkala.
+                </p>
             </div>
         </div>
     </section>
 
-    <footer class="bg-slate-950 border-t border-slate-900 py-10 mt-10">
+    <footer class="bg-white border-t border-slate-200 py-12 mt-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="space-y-3 text-center md:text-left">
+            <div class="space-y-2 text-center md:text-left">
                 <div class="flex items-center justify-center md:justify-start space-x-3">
                     <div class="bg-blue-600 text-white p-1.5 rounded-lg font-black text-sm flex items-center justify-center">
                         <i data-lucide="hook" class="w-4 h-4 transform -rotate-45"></i>
                     </div>
-                    <span class="text-lg font-extrabold tracking-wider text-white">
-                        CRANE<span class="text-blue-500">VIS</span>
+                    <span class="text-lg font-extrabold tracking-wider text-slate-900">
+                        CRANE<span class="text-blue-600">VIS</span>
                     </span>
                 </div>
-                <p class="text-xs text-slate-500">&copy; 2026 Cranevis Mobile Solutions. All rights reserved.</p>
+                <p class="text-sm font-medium text-slate-500">&copy; 2026 Cranevis Mobile Solutions. Hak Cipta Dilindungi.</p>
             </div>
-            <div class="max-w-lg text-center md:text-right">
-                <p class="text-[11px] text-slate-600 leading-relaxed font-medium">
-                    Disclaimer: Cranevis is designed as an advanced technical reference and validation tool. Output calculations provided by this application must always be independently corroborated with actual crane manufacturer load charts and direct site regulatory guidelines prior to conducting any physical lifting operations.
+            <div class="max-w-md text-center md:text-right">
+                <p class="text-xs text-slate-400 font-medium leading-relaxed">
+                    Peringatan: Cranevis adalah aplikasi utilitas bantuan. Hasil perhitungan dari aplikasi ini tetap harus dicocokkan dengan spesifikasi manual pabrikan alat berat Anda sebelum operasi pengangkatan dilakukan di lapangan.
                 </p>
             </div>
         </div>
