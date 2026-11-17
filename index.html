@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cranevis - Crane & Lifting Companion App</title>
+    <title>Cranevis: Crane & Rigging — Lift Plan, Rigging & Crane Sim</title>
+    <meta name="description" content="Cranevis is an all-in-one crane, rigging, and lift planning toolkit built for Lifting Engineers, Riggers, Crane Operators, and Safety Officers. From quick rigging calculations (weight, sling SWL & tension, AR angle camera) to crane ground bearing pressure (GBP), interactive lifting simulation, and print-ready PDF lifting plans — everything works offline in the field.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -34,9 +35,14 @@
                 <div class="bg-blue-600 text-white p-2 rounded-xl font-black text-xl flex items-center justify-center shadow-lg shadow-blue-600/20">
                     <i data-lucide="hook" class="w-6 h-6 transform -rotate-45"></i>
                 </div>
-                <span class="text-2xl font-extrabold tracking-wider text-slate-900">
-                    CRANE<span class="text-blue-600">VIS</span>
-                </span>
+                <div class="flex flex-col">
+                    <span class="text-2xl font-extrabold tracking-wider text-slate-900 leading-none">
+                        CRANE<span class="text-blue-600">VIS</span>
+                    </span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-slate-500 mt-0.5">
+                        Crane &amp; Rigging
+                    </span>
+                </div>
             </div>
             <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
                 <a href="https://cranevis.com/eula.html" class="hover:text-blue-600 transition-colors">EULA</a>
@@ -53,25 +59,25 @@
         </div>
     </header>
 
-
-
-    <section class="pt-12 pb-24 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto flex flex-col items-center justify-center min-h-[70vh]">
-        <div class="text-center space-y-8 w-full">
+    <section class="pt-32 pb-24 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto flex flex-col items-center justify-center min-h-[70vh]">
+        <div class="text-center space-y-6 w-full">
             <div class="inline-flex items-center justify-center space-x-2 bg-blue-50 border border-blue-200 text-blue-700 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-sm">
                 <span class="flex h-2 w-2 relative">
                     <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
                     <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
                 </span>
-                <span>Next-Gen Crane Companion App</span>
+                <span>Crane, Rigging &amp; Lift Planning App</span>
             </div>
             
-            <h1 class="text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight leading-tight text-slate-900">
-                Lift Smarter, <br />
-                <span class="bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 bg-clip-text text-transparent">Simulate Safer.</span>
-            </h1>
+            <div class="space-y-3">
+                <h1 class="text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight leading-tight text-slate-900">
+                    Lift Plan, Rigging &amp; <br />
+                    <span class="bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 bg-clip-text text-transparent">Crane Sim.</span>
+                </h1>
+            </div>
             
-            <p class="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto font-light leading-relaxed">
-                Empower your smartphone with heavy-lifting mathematics. Plan setups, check rigging capacities, and measure angles in seconds.
+            <p class="text-base sm:text-lg text-slate-600 max-w-3xl mx-auto font-normal leading-relaxed">
+                Cranevis is an all-in-one crane, rigging, and lift planning toolkit built for <strong class="font-semibold text-slate-800">Lifting Engineers, Riggers, Crane Operators, and Safety Officers</strong>. From quick rigging calculations (weight, sling SWL &amp; tension, AR angle camera) to crane ground bearing pressure (GBP), interactive lifting simulation, and print-ready PDF lifting plans — everything works offline in the field.
             </p>
             
             <!-- Hero Download Buttons -->
@@ -85,17 +91,14 @@
                     </div>
                 </a>
 
-                <!-- App Store (Coming Soon) Button -->
-                <div class="w-full sm:w-auto flex items-center justify-center space-x-3 bg-slate-800/60 border border-slate-700/60 px-8 py-4 rounded-2xl cursor-not-allowed opacity-80 select-none">
-                    <i data-lucide="apple" class="w-8 h-8 text-slate-400 fill-slate-400"></i>
+                <!-- App Store Button -->
+                <a href="https://apps.apple.com/app/cranevis/id6818746034" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto flex items-center justify-center space-x-3 bg-slate-900 hover:bg-slate-800 border border-slate-700 px-8 py-4 rounded-2xl transition-all duration-200 shadow-xl shadow-slate-900/10 hover:-translate-y-1">
+                    <i data-lucide="apple" class="w-8 h-8 text-white fill-white"></i>
                     <div class="text-left">
-                        <div class="flex items-center space-x-2">
-                            <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Download on</p>
-                            <span class="text-[10px] bg-blue-500/20 text-blue-300 border border-blue-400/30 px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">Coming Soon</span>
-                        </div>
-                        <p class="text-lg font-bold text-slate-300 leading-tight">App Store</p>
+                        <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Download on the</p>
+                        <p class="text-lg font-bold text-white leading-tight">App Store</p>
                     </div>
-                </div>
+                </a>
             </div>
             
             <div class="grid grid-cols-3 gap-6 pt-12 max-w-2xl mx-auto border-t border-slate-200 w-full mt-8">
@@ -105,7 +108,7 @@
                 </div>
                 <div>
                     <p class="text-3xl sm:text-4xl font-extrabold text-slate-900">100%</p>
-                    <p class="text-xs sm:text-sm text-slate-500 uppercase mt-2 font-semibold tracking-wide">Field Tested</p>
+                    <p class="text-xs sm:text-sm text-slate-500 uppercase mt-2 font-semibold tracking-wide">Offline Ready</p>
                 </div>
                 <div>
                     <p class="text-3xl sm:text-4xl font-extrabold text-slate-900">0%</p>
@@ -118,9 +121,9 @@
     <section id="features" class="py-24 bg-white border-y border-slate-200 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600">Comprehensive Utility Suit</h2>
-                <p class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight"> Engineered for Modern Lift Professionals</p>
-                <p class="text-slate-600 font-light">Cranevis packs eight robust modules into one seamless interface, replacing heavy books and complex spreadsheets right in the field.</p>
+                <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600">All-in-One Crane, Rigging &amp; Lift Planning Toolkit</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Engineered for Modern Lift Professionals</p>
+                <p class="text-slate-600 font-light">Cranevis: Crane &amp; Rigging packs eight robust modules into one seamless offline interface, replacing heavy books and complex spreadsheets right in the field.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -138,9 +141,9 @@
                     <div class="bg-blue-50 text-blue-600 w-12 h-12 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i data-lucide="table" class="w-6 h-6"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">2. Sling Table</h3>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">2. Sling SWL Table</h3>
                     <p class="text-slate-600 text-sm leading-relaxed font-light">
-                        A dynamic rating encyclopedia covering wire rope slings, synthetic webbing, and chain configurations. Supports multi-grade selections with a seamless imperial-metric toggle.
+                        A dynamic Safe Working Load (SWL) rating encyclopedia covering wire rope slings, synthetic webbing, and chain configurations. Supports multi-grade selections with a seamless imperial-metric toggle.
                     </p>
                 </div>
 
@@ -148,9 +151,9 @@
                     <div class="bg-blue-50 text-blue-600 w-12 h-12 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i data-lucide="camera" class="w-6 h-6"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">3. Angle Camera</h3>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">3. AR Angle Camera</h3>
                     <p class="text-slate-600 text-sm leading-relaxed font-light">
-                        Use your phone’s camera system to lock in sling orientation angles. Snap a quick layout photo and overlay measuring protractors to assure dynamic hoisting tolerances.
+                        Use your phone’s AR angle camera system to lock in sling orientation angles. Snap a quick layout photo and overlay measuring protractors to assure dynamic hoisting tolerances.
                     </p>
                 </div>
 
@@ -160,7 +163,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">4. Sling Tension</h3>
                     <p class="text-slate-600 text-sm leading-relaxed font-light">
-                        Enter load specs and apex geometries to compute individual line stress. Instantly verify if the sling tension stays safely inside operational limits.
+                        Enter load specs and apex geometries to compute individual line stress. Instantly verify if the sling tension stays safely inside SWL operational limits.
                     </p>
                 </div>
 
@@ -168,9 +171,9 @@
                     <div class="bg-blue-50 text-blue-600 w-12 h-12 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i data-lucide="cpu" class="w-6 h-6"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">5. Simulation Workspace</h3>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">5. Interactive Lifting Simulation</h3>
                     <p class="text-slate-600 text-sm leading-relaxed font-light">
-                        Configure telescopic or lattice boom models. Adjust surrounding structural boundaries and dimensions dynamically, scaling loads on-the-fly to test clearances.
+                        Configure telescopic or lattice boom models in an interactive crane sim workspace. Adjust surrounding structural boundaries and dimensions dynamically, scaling loads on-the-fly to test clearances.
                     </p>
                 </div>
 
@@ -178,9 +181,9 @@
                     <div class="bg-blue-50 text-blue-600 w-12 h-12 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i data-lucide="layers" class="w-6 h-6"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">6. Ground Bearing Pressure</h3>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">6. Ground Bearing Pressure (GBP)</h3>
                     <p class="text-slate-600 text-sm leading-relaxed font-light">
-                        Analyze ground outrigger forces in real time. Input Ground Bearing Capacity (GBC) guidelines to compute the necessary support pad areas, ensuring total structural safety.
+                        Analyze crane ground bearing pressure (GBP) and outrigger forces in real time. Input Ground Bearing Capacity (GBC) guidelines to compute the necessary support pad areas, ensuring total structural safety.
                     </p>
                 </div>
 
@@ -200,10 +203,10 @@
                             <div class="bg-blue-50 text-blue-600 w-12 h-12 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
                                 <i data-lucide="file-spreadsheet" class="w-6 h-6"></i>
                             </div>
-                            <h3 class="text-xl font-bold text-slate-900">8. Professional Lifting Plan Builder</h3>
+                            <h3 class="text-xl font-bold text-slate-900">8. Print-Ready PDF Lifting Plan Builder</h3>
                         </div>
                         <p class="text-slate-600 text-sm leading-relaxed font-light max-w-2xl">
-                            Compile all your simulation telemetry, sling designs, and soil pressures into an instantly generated, print-ready, professional PDF Lifting Plan. Ready to share with your safety officers or print on-site.
+                            Compile all your interactive lifting simulation telemetry, sling SWL &amp; tension designs, and crane ground bearing pressure (GBP) into an instantly generated, print-ready PDF Lifting Plan. Ready to share with your safety officers or print on-site.
                         </p>
                     </div>
                     <div class="shrink-0">
@@ -221,8 +224,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
                 <span class="text-xs font-bold uppercase tracking-widest text-blue-600">Uncompromised Precision</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Heavy Lifting, Calculated Right</h2>
-                <p class="text-slate-600 font-light">Whether you are an on-site supervisor, safety officer, or heavy machinery operator, Cranevis offers critical security checks.</p>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Built for Field Lifting Teams</h2>
+                <p class="text-slate-600 font-light">Purpose-built for Lifting Engineers, Riggers, Crane Operators, and Safety Officers — Cranevis delivers critical calculations and simulations offline in the field.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                 <div class="bg-white border border-slate-200 p-8 rounded-3xl space-y-4 shadow-sm hover:shadow-md transition-shadow">
@@ -231,16 +234,16 @@
                     </div>
                     <h3 class="text-lg font-bold text-slate-900">Risk Mitigation</h3>
                     <p class="text-slate-600 text-sm leading-relaxed font-light">
-                        Overcome estimation hazards. Instantly double-check mechanical, wire, and soil pressure specs before making any hoist action.
+                        Overcome estimation hazards. Instantly double-check load weight, sling SWL &amp; tension, and crane ground bearing pressure (GBP) specs before making any hoist action.
                     </p>
                 </div>
                 <div class="bg-white border border-slate-200 p-8 rounded-3xl space-y-4 shadow-sm hover:shadow-md transition-shadow">
                     <div class="mx-auto w-12 h-12 bg-blue-50 text-blue-600 flex items-center justify-center rounded-2xl">
                         <i data-lucide="pocket" class="w-6 h-6"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900">Ultra Portable</h3>
+                    <h3 class="text-lg font-bold text-slate-900">100% Offline in the Field</h3>
                     <p class="text-slate-600 text-sm leading-relaxed font-light">
-                        Leave bulky manuals, lookup binders, and notebooks behind. Have complete crane charts and safety modules sitting right in your pocket.
+                        Leave bulky manuals, lookup binders, and notebooks behind. Every calculation, AR angle camera check, and crane sim module works completely offline right in your pocket.
                     </p>
                 </div>
                 <div class="bg-white border border-slate-200 p-8 rounded-3xl space-y-4 shadow-sm hover:shadow-md transition-shadow">
@@ -249,7 +252,7 @@
                     </div>
                     <h3 class="text-lg font-bold text-slate-900">Regulatory Assist</h3>
                     <p class="text-slate-600 text-sm leading-relaxed font-light">
-                        Build and draft detailed Lifting Plan outlines containing all critical soil, engineering, and rigging data. Accelerate site manager approvals.
+                        Generate print-ready PDF lifting plans containing all critical GBP soil pressure, interactive lifting simulation, and rigging data to accelerate site approvals.
                     </p>
                 </div>
             </div>
@@ -262,10 +265,10 @@
             <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
             <div class="max-w-3xl mx-auto space-y-8 relative z-10">
                 <h2 class="text-3xl sm:text-5xl font-black tracking-tight text-white">
-                    Ready for Easy Lifting Operations?
+                    Get Cranevis: Crane &amp; Rigging Today
                 </h2>
                 <p class="text-blue-100 font-medium text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
-                    Download Cranevis now on your Android smartphone and join hundreds of certified riggers, operators, and civil safety engineers raising safety bars worldwide.
+                    Download the all-in-one crane, rigging, and lift planning toolkit on your Android or iOS device — trusted by Lifting Engineers, Riggers, Crane Operators, and Safety Officers worldwide.
                 </p>
 
                 <!-- Download Action Buttons -->
@@ -279,21 +282,18 @@
                         </div>
                     </a>
 
-                    <!-- App Store (Coming Soon) Button -->
-                    <div class="w-full sm:w-auto bg-white/10 border border-white/20 text-white font-bold px-8 py-4 rounded-2xl flex items-center justify-center space-x-3 cursor-not-allowed opacity-80 backdrop-blur-sm select-none">
-                        <i data-lucide="apple" class="w-6 h-6 fill-white text-white"></i>
+                    <!-- App Store Button -->
+                    <a href="https://apps.apple.com/app/cranevis/id6818746034" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-900 font-bold px-8 py-4 rounded-2xl shadow-xl transition-all duration-200 hover:-translate-y-1 flex items-center justify-center space-x-3">
+                        <i data-lucide="apple" class="w-6 h-6 fill-slate-900 text-slate-900"></i>
                         <div class="text-left">
-                            <div class="flex items-center space-x-2">
-                                <p class="text-[9px] text-blue-200 uppercase tracking-wider font-semibold">App Store</p>
-                                <span class="text-[9px] bg-white/20 text-white border border-white/30 px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">Coming Soon</span>
-                            </div>
-                            <p class="text-base font-bold text-white">App Store</p>
+                            <p class="text-[9px] text-slate-500 uppercase tracking-wider font-semibold">Download on the</p>
+                            <p class="text-base font-bold">App Store</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <p class="text-sm text-blue-200/80 font-medium pt-6">
-                    Compatible with Android version 8.0 Oreo and above. No constant internet required.
+                    Compatible with Android 8.0+ and iOS / iPadOS devices. Everything works offline in the field.
                 </p>
             </div>
         </div>
@@ -307,10 +307,10 @@
                         <i data-lucide="hook" class="w-4 h-4 transform -rotate-45"></i>
                     </div>
                     <span class="text-lg font-extrabold tracking-wider text-slate-900">
-                        CRANE<span class="text-blue-600">VIS</span>
+                        CRANE<span class="text-blue-600">VIS</span>: <span class="text-sm font-bold text-slate-600">CRANE &amp; RIGGING</span>
                     </span>
                 </div>
-                <p class="text-xs text-slate-500">&copy; 2026 Cranevis Mobile Solutions. All rights reserved.</p>
+                <p class="text-xs text-slate-500">&copy; 2026 Cranevis Team. All rights reserved.</p>
             </div>
             <div class="max-w-md text-center md:text-right">
                 <p class="text-[10px] text-slate-500 leading-relaxed">
